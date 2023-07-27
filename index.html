@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit</title>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
       rel="stylesheet"
@@ -32,10 +32,10 @@
               "footer-bg": "#121212;",
             },
             backgroundImage: {
-              "banner-bg-1": "url(./images/banner1.png)",
-              "banner-bg-2": "url(./images/banner2.png)",
-              "banner-bg-3": "url(./images/banner3.png)",
-              "banner-bg-4": "url(./images/banner4.png)",
+              "banner-bg-1": "url(././images/banner1.png)",
+              "banner-bg-2": "url(././images/banner2.png)",
+              "banner-bg-3": "url(././images/banner3.png)",
+              "banner-bg-4": "url(././images/banner4.png)",
             },
           },
         },
@@ -61,7 +61,7 @@
           </div>
           <div class="navbar-center">
             <div class="flex items-center gap-2">
-              <img class="h-14" src="images/logo.png" alt="Logo" />
+              <img class="h-14" src="./images/logo.png" alt="Logo" />
               <h3 class="text-4xl font-bold">Fruit Burst</h3>
             </div>
           </div>
@@ -188,23 +188,23 @@
       >
         <div class="flex justify-around">
           <div class="text-center">
-            <img class="mx-auto" src="images/fruit1.png" alt="" />
+            <img class="mx-auto" src="./images/fruit1.png" alt="" />
             <p class="text-description-color">Grapes</p>
           </div>
           <div class="text-center">
-            <img class="mx-auto" src="images/fruit2.png" alt="" />
+            <img class="mx-auto" src="./images/fruit2.png" alt="" />
             <p class="text-description-color">Orange</p>
           </div>
           <div class="text-center">
-            <img class="mx-auto" src="images/fruit3.png" alt="" />
+            <img class="mx-auto" src="./images/fruit3.png" alt="" />
             <p class="text-description-color">Orange</p>
           </div>
           <div class="text-center">
-            <img class="mx-auto" src="images/fruit4.png" alt="" />
+            <img class="mx-auto" src="./images/fruit4.png" alt="" />
             <p class="text-description-color">Strawberry</p>
           </div>
           <div class="text-center">
-            <img class="mx-auto" src="images/fruit5.png" alt="" />
+            <img class="mx-auto" src="./images/fruit5.png" alt="" />
             <p class="text-description-color">Pomegranate</p>
           </div>
         </div>
@@ -263,7 +263,7 @@
           <!-- Fruit Rating-1 -->
           <div>
             <div class="bg-card-color py-12 text-center space-y-10 rounded-lg">
-              <img class="mx-auto" src="images/fruit6.png" alt="" />
+              <img class="mx-auto" src="./images/fruit6.png" alt="" />
               <h3 class="text-2xl to-black font-bold">12.90$ - 18.85$</h3>
               <div class="space-y-4">
                 <p class="text-description-color">Apples</p>
@@ -289,49 +289,137 @@
                   <input
                     type="radio"
                     name="rating-10"
-                    class="bg-orange-100 mask mask-star-2 mask-half-2"
+                    class="bg-orange-200 mask mask-star-2 mask-half-2"
                   />
                   <input
                     type="radio"
                     name="rating-10"
-                    class="bg-orange-100 mask mask-star-2 mask-half-1"
+                    class="bg-orange-200 mask mask-star-2 mask-half-1"
                   />
                   <input
                     type="radio"
                     name="rating-10"
-                    class="bg-orange-100 mask mask-star-2 mask-half-2"
+                    class="bg-orange-200 mask mask-star-2 mask-half-2"
                   />
                   <input
                     type="radio"
                     name="rating-10"
-                    class="bg-orange-100 mask mask-star-2 mask-half-1"
+                    class="bg-orange-200 mask mask-star-2 mask-half-1"
                   />
                   <input
                     type="radio"
                     name="rating-10"
-                    class="bg-orange-100 mask mask-star-2 mask-half-2"
+                    class="bg-orange-200 mask mask-star-2 mask-half-2"
                   />
                   <input
                     type="radio"
                     name="rating-10"
-                    class="bg-orange-100 mask mask-star-2 mask-half-1"
+                    class="bg-orange-200 mask mask-star-2 mask-half-1"
                   />
                   <input
                     type="radio"
                     name="rating-10"
-                    class="bg-orange-100 mask mask-star-2 mask-half-2"
+                    class="bg-orange-200 mask mask-star-2 mask-half-2"
                   />
                 </div>
               </div>
             </div>
+            <!-- modal -->
+            <div>
+              <!-- Open the modal using ID.showModal() method -->
+              <p class="cursor-pointer" onclick="my_modal_1.showModal()">
+                open modal
+              </p>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <div
+                    class="bg-card-color py-12 text-center space-y-10 rounded-lg"
+                  >
+                    <img class="mx-auto" src="./images/fruit6.png" alt="" />
+                    <h3 class="text-2xl to-black font-bold">12.90$ - 18.85$</h3>
+                    <div class="space-y-4">
+                      <p class="text-description-color">Apples</p>
+                      <!-- Rating -->
+                      <div class="rating rating-lg rating-half">
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="rating-hidden"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-400 mask mask-star-2 mask-half-1"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-400 mask mask-star-2 mask-half-2"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-400 mask mask-star-2 mask-half-1"
+                          checked
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-200 mask mask-star-2 mask-half-2"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-200 mask mask-star-2 mask-half-1"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-200 mask mask-star-2 mask-half-2"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-200 mask mask-star-2 mask-half-1"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-200 mask mask-star-2 mask-half-2"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-200 mask mask-star-2 mask-half-1"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-10"
+                          class="bg-orange-200 mask mask-star-2 mask-half-2"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn">Close</button>
+                      <button class="btn">Buy Now</button>
+                    </div>
+                  </div>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
           </div>
+
           <div>
             <!-- Fruit Rating-2 -->
             <div>
               <div
                 class="bg-card-color py-12 text-center space-y-10 rounded-lg"
               >
-                <img class="mx-auto" src="images/fruit7.png" alt="" />
+                <img class="mx-auto" src="./images/fruit7.png" alt="" />
                 <h3 class="text-2xl to-black font-bold">12.90$ - 18.85$</h3>
                 <div class="space-y-4">
                   <p class="text-description-color">Apples</p>
@@ -345,7 +433,7 @@
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-400 mask mask-star-2 mask-half-1"
+                      class="bg-orange-400 mask mask-star-2 bg- mask-half-1"
                     />
                     <input
                       type="radio"
@@ -361,37 +449,37 @@
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-2"
+                      class="bg-orange-200 mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-1"
+                      class="bg-orange-200 mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-2"
+                      class="bg-orange-200 mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-1"
+                      class="bg-orange-200 mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-2"
+                      class="bg-orange-200 mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-1"
+                      class="bg-orange-200 mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-2"
+                      class="bg-orange-200 mask mask-star-2 mask-half-2"
                     />
                   </div>
                 </div>
@@ -404,7 +492,7 @@
               <div
                 class="bg-card-color py-12 text-center space-y-10 rounded-lg"
               >
-                <img class="mx-auto" src="images/fruit8.png" alt="" />
+                <img class="mx-auto" src="./images/fruit8.png" alt="" />
                 <h3 class="text-2xl to-black font-bold">12.90$ - 18.85$</h3>
                 <div class="space-y-4">
                   <p class="text-description-color">Apples</p>
@@ -434,37 +522,37 @@
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-2"
+                      class="bg-orange-200 mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-1"
+                      class="bg-orange-200 mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-2"
+                      class="bg-orange-200 mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-1"
+                      class="bg-orange-200 mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-2"
+                      class="bg-orange-200 mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-1"
+                      class="bg-orange-200 mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-orange-100 mask mask-star-2 mask-half-2"
+                      class="bg-orange-200 mask mask-star-2 mask-half-2"
                     />
                   </div>
                 </div>
@@ -477,7 +565,7 @@
               <div
                 class="bg-card-color py-12 text-center space-y-10 rounded-lg"
               >
-                <img class="mx-auto" src="images/fruit9.png" alt="" />
+                <img class="mx-auto" src="./images/fruit9.png" alt="" />
                 <h3 class="text-2xl to-black font-bold">12.90$ - 18.85$</h3>
                 <div class="space-y-4">
                   <p class="text-description-color">Apples</p>
@@ -566,7 +654,7 @@
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20"
               >
                 <div class="text-white">
-                  <img class="mx-auto mb-3" src="images/member1.png" alt="" />
+                  <img class="mx-auto mb-3" src="./images/member1.png" alt="" />
                   <h6 class="text-2xl">Awlad Hossain</h6>
                   <p>Fruits Expert</p>
                   <div class="flex justify-center gap-3">
@@ -582,7 +670,7 @@
                   </div>
                 </div>
                 <div class="text-white">
-                  <img class="mx-auto mb-3" src="images/member4.png" alt="" />
+                  <img class="mx-auto mb-3" src="./images/member4.png" alt="" />
                   <h6 class="text-2xl">Safia Chowdhury</h6>
                   <p>Fruits Expert</p>
                   <div class="flex justify-center gap-3">
@@ -598,7 +686,7 @@
                   </div>
                 </div>
                 <div class="text-white">
-                  <img class="mx-auto mb-3" src="images/member3.png" alt="" />
+                  <img class="mx-auto mb-3" src="./images/member3.png" alt="" />
                   <h6 class="text-2xl">Rokib Hossain</h6>
                   <p>Fruits Expert</p>
                   <div class="flex justify-center gap-3">
@@ -614,7 +702,7 @@
                   </div>
                 </div>
                 <div class="text-white">
-                  <img class="mx-auto mb-3" src="images/member4.png" alt="" />
+                  <img class="mx-auto mb-3" src="./images/member4.png" alt="" />
                   <h6 class="text-2xl">Chaity</h6>
                   <p>Fruits Expert</p>
                   <div class="flex justify-center gap-3">
@@ -699,7 +787,7 @@
               </div>
             </div>
             <div>
-              <img class="mx-auto" src="images/whychoose1.png" alt="" />
+              <img class="mx-auto" src="./images/whychoose1.png" alt="" />
             </div>
           </div>
           <div>
@@ -764,7 +852,7 @@
       >
         <div class="space-y-5">
           <div class="flex items-center gap-2">
-            <img class="h-14" src="images/logo.png" alt="Logo" />
+            <img class="h-14" src="./images/logo.png" alt="Logo" />
             <h3 class="text-4xl font-bold">Fruit Burst</h3>
           </div>
           <div class="grid gap-4 grid-cols-3 md:grid-cols-6">
